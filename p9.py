@@ -1,9 +1,21 @@
-#Create a string from given string where first and last characters exchanged. [eg: python -
-#> nythop] 
-
-a=input("Enter the string:")
-x=list(a)
-temp=x[0]
-x[0]=x[-1]
-x[-1]=temp
-print("".join(x))
+"""
+Construct following pattern using nested loop
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+"""
+n=int(input("Enter a limit"))
+for i in range(0,n+1):
+    for j in range(0,i):
+        print("*",end=" ")
+    print("\n")
+for i in reversed(range(0,n)):
+    for j in reversed(range(0,i)):
+         print("*",end=" ")
+    print("\n")

@@ -1,11 +1,8 @@
+#Generate a list of four digit numbers in a given range with all their digits even and the
+# number is a perfect square. 
+from math import sqrt
 
-#Count the occurrences of each word in a line of text. 
-Text=input("Enter the text:")
-words= {}
-for word in Text.split(' '):
-    if word in words.keys():
-        words[word]+=1
-    else:
-        words[word]=1
-        
-print(words)
+n=int(input("Enter a limit:"))
+for i in range(1000,n):
+    if sqrt(i)== int(sqrt(i)) and i%2==0:
+        print(i)

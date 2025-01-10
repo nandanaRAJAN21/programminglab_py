@@ -1,29 +1,13 @@
-#Enter 2 lists of integers. Check
-#  (a) Whether list are of same length 
-# (b)  whether list sums to same value 
-# (c) whether any value occur in both 
+#Add ‘ing’ at the end of a given string. If it already 
+# ends with ‘ing’, then add ‘ly’
 
-l1=[1,2,3,4,5,2]
-l2=[1,2,3,4,8,7]
-sum=0
-sum2=0
-if len(l1) == len(l2):
-    print("same length")
-else:
-    print("different length")
+st=input("enter the string")
+if st.endswith ("ing"):
+    st+='ly'
+elif len(st)>=3:
+    st+='ing'
+print(st)
 
-for i in l1:
-    sum=sum+i
-for j in l2:
-    sum2=sum2+j
-if sum ==sum2:
-    print("list sums have same value")
-else:
-    print("list sums have not same value")
-
-print("whether any value occur in both:")
-print("common element")
-for x in l1:
-    for y in l2:
-        if x==y:
-            print(y)
+""" 
+string.endswith(string)
+"""

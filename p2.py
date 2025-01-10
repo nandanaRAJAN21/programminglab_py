@@ -1,7 +1,9 @@
-#Display future leap years from current year to a final year entered by user
-
-y=int(input("Enter the year"))
-b=int(2022)
-for i in range(b,y):
-    if i%4==0 and i%100!=0:
-        print(i)
+#Generate Fibonacci series of N terms
+num = int(input("Enter the number:"))
+n1, n2 = 0, 1
+print("Fibonacci Series:", n1, n2, end=" ")
+for i in range(2, num):
+    n3 = n1 + n2
+    n1 = n2
+    n2 = n3
+    print(n3, end=" ")
