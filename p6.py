@@ -1,20 +1,7 @@
-#Count the number of characters (character frequency) in a string. 
-
-
-a=input("Enter a word:")
-print("Length of ",a,":",len(a))
-
-
-"""   cmmt
-
-st=input("Enter a word:")
-
-c=0
-for i in st:
-    if i ==" ":
-        continue
-    else:
-        c=c+1
-print(c,"character in "+ st)        
-
-"""
+#Store a list of first names. Count the occurrences of ‘a’ within the list
+names=["ashil","anand","ajeesh","aljo"]
+count=0
+for name in names:
+    count=count+name.count('a')
+    print("occurrences  of a in the list", name,"is:",count)
+    count=0

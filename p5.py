@@ -1,17 +1,9 @@
-#Display the given pyramid with step number accepted from user.
-#Eg: N=4
-#1
-#2 4
-#3 6 9
-#4 8 12 16 
+#Prompt the user for a list of integers. For all values greater than 100, store ‘over’ instead
 
-n=int(input("Enter the numbers:"))
-
-for i in range(1,n+1):
-    for j in range(0,i+1):
-        a=i*j
-        if a== 0:
-            continue
-        else:
-            print(a,end=" ")
-    print("\n")        
+l=[]
+for i in range(0,5):
+    n=int(input("Enter the integers:"))
+    l.insert(i,n)
+    if l[i]>100:
+        l[i]="over"
+print(l)
