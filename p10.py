@@ -1,7 +1,4 @@
-#Generate all factors of a number. 
-n=int(input("Enter a number :"))
-print(" factors of ",n," are:")
-for i in range(0,n):
-    for j in range(0,n):
-        if i*j==n:
-            print(i,j)
+#Accept the radius from user and find area of circle. 
+r=int(input("Enter the radius:"))
+a=3.14*r*r
+print("Area:",a)

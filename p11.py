@@ -1,10 +1,11 @@
-#Write lambda functions to find area of square, rectangle and triangle.
-l=int(input("length "))
-b=int(input("breath :"))
-h=int(input("heght:"))
-ars=lambda x: x*x
-arr=lambda x,y:x*y
-art=lambda x,y:0.5*x*y
-print("Area of square:",ars(l))
-print("Area of rectangle:",arr(l,b))
-print("Area of triangle:",art(l,h))
+#Find biggest of 3 numbers entered
+a=int(input("Enter A:"))
+b=int(input("Enter B:"))
+c=int(input("Enter C:"))
+if a>b:
+    if b>c:
+        print("A is Greater")
+elif b>c:
+    print("B is Greater")
+else:
+    print("C is Greater")        
